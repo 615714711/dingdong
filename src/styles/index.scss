@@ -1,0 +1,130 @@
+
+$base_color:#fff;
+@import "common/mobile";
+@import "common/animate.min.css";
+@import "common/swiper-3.3.1.min.css";
+@import "common/antd-mobile.css";
+@import "../assets/iconfont/iconfont.css";
+@import "page/foot";
+@import "page/mine";
+@import "page/cart";
+
+
+body{
+    background: $base_color
+}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+ }
+
+.clearfix {
+    zoom: 1;
+}
+.btnbox{
+    width:96%;
+    margin:0px auto;
+    border:1px dotted orange;
+    height:60px;
+}
+
+.right-in{
+    animation:lightSpeedIn .8s;
+}
+
+
+.carousel{
+    width:100% ;
+    height:300px;  /*no*/
+}
+
+html,body,#app,.section{
+    width:100%;
+    height:100%;
+}
+
+.section .content{
+    margin-top: 30px;
+    padding-bottom: 100px !important
+}
+.section .content .title{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: green;
+    font-size: 26px;
+    font-weight: 800;
+}
+//分类
+.leftbar{
+    position: fixed;
+    left: 0;
+    width: 1.8rem;
+    text-align: center;
+    height:100%;
+    border-right: 1px solid #ccc;
+} 
+.barItem {
+    height: .8rem;
+    line-height: .8rem;
+    border-bottom: 1px solid #ccc;
+}
+.rightContent {
+    flex: 1;
+    margin-left: 1.8rem;
+}
+
+.rightItem:nth-last-child(1) {
+    padding-bottom: .9rem;
+}
+
+.active.menu-text {
+    background:#6495ED;
+    color: white;
+}
+
+.category-item {
+    padding: .2rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.detail-item {
+    width: 100%;
+}
+
+.goods-textBox {
+    width: 100%;
+}
+
+.goods-img {
+    width: 100px;
+    height: 100px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.goods-name {
+    font-size: .28rem;
+}
+
+.goods-coach {
+    font-size: .26rem;
+    color: red;
+    margin: .2rem 0;
+}
+
+.goods-cartBox {
+    margin-right: .4rem;
+    width: .4rem;
+    height: .4rem;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
